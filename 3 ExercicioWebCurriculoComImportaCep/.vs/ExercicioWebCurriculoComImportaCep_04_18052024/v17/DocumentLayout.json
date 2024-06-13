@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Curso programar\\JavaScript\\ExercicioWebCurriculoComImportaCep_04_18052024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2808BF96-A905-42D7-A1F3-92C3A34BD05D}|ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024.csproj|c:\\curso programar\\javascript\\exerciciowebcurriculocomimportacep_04_18052024\\exerciciowebcurriculocomimportacep_04_18052024\\curriculohtml.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2808BF96-A905-42D7-A1F3-92C3A34BD05D}|ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024.csproj|solutionrelative:exerciciowebcurriculocomimportacep_04_18052024\\curriculohtml.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2808BF96-A905-42D7-A1F3-92C3A34BD05D}|ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024.csproj|c:\\curso programar\\javascript\\exerciciowebcurriculocomimportacep_04_18052024\\exerciciowebcurriculocomimportacep_04_18052024\\importacep.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2808BF96-A905-42D7-A1F3-92C3A34BD05D}|ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024.csproj|solutionrelative:exerciciowebcurriculocomimportacep_04_18052024\\importacep.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CurriculoHtml.html",
+              "DocumentMoniker": "C:\\Curso programar\\JavaScript\\ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024\\CurriculoHtml.html",
+              "RelativeDocumentMoniker": "ExercicioWebCurriculoComImportaCep_04_18052024\\CurriculoHtml.html",
+              "ToolTip": "C:\\Curso programar\\JavaScript\\ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024\\CurriculoHtml.html",
+              "RelativeToolTip": "ExercicioWebCurriculoComImportaCep_04_18052024\\CurriculoHtml.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-23T00:44:24.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImportaCep.html",
+              "DocumentMoniker": "C:\\Curso programar\\JavaScript\\ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024\\ImportaCep.html",
+              "RelativeDocumentMoniker": "ExercicioWebCurriculoComImportaCep_04_18052024\\ImportaCep.html",
+              "ToolTip": "C:\\Curso programar\\JavaScript\\ExercicioWebCurriculoComImportaCep_04_18052024\\ExercicioWebCurriculoComImportaCep_04_18052024\\ImportaCep.html",
+              "RelativeToolTip": "ExercicioWebCurriculoComImportaCep_04_18052024\\ImportaCep.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-23T00:44:22.599Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

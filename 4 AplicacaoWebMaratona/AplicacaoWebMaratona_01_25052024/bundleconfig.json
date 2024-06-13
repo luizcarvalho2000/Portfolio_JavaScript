@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "style/avancado/estilo_profissional.min.css",
+    "inputFiles": [
+      "style/avancado/estilo_profissional.css"
+    ]
+  },
+  {
+    "outputFileName": "Maratona.min.html",
+    "inputFiles": [
+      "Maratona.html"
+    ]
+  }
+]

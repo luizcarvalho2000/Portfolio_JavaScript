@@ -1,0 +1,5 @@
+C:\Curso programar\JavascriptGit\SistemaSolar\SistemaSolar\bin\SistemaSolar.dll
+C:\Curso programar\JavascriptGit\SistemaSolar\SistemaSolar\bin\SistemaSolar.pdb
+C:\Curso programar\JavascriptGit\SistemaSolar\SistemaSolar\obj\Debug\SistemaSolar.csprojResolveAssemblyReference.cache
+C:\Curso programar\JavascriptGit\SistemaSolar\SistemaSolar\obj\Debug\SistemaSolar.dll
+C:\Curso programar\JavascriptGit\SistemaSolar\SistemaSolar\obj\Debug\SistemaSolar.pdb

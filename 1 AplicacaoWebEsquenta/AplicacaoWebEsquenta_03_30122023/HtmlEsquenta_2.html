@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Exercicio Web Esquenta Inicial</title>
+        <meta charset="utf-8" />
+        <meta name="author"content="Luiz Carvalho" />
+        <meta name="description"content="Página de apresentação -HELLO- DE HTML" />
+        <meta name="keywords"content="Palavras-chaves para pesquisa nos mecanismos de busca do google e outros - winowns1252 = ISO-8899-1" />  
+        <meta name="viewport"content="width=device-widht,inicial-scale-1.0" />
+        <style>
+
+            .auto-style1 {
+                 height: 21px;
+             }
+
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="style/meuCSS.css" />
+
+    </head>
+
+    <body>
+          <!--Títulos de seções, subseções, subsubsesões... até h6-->
+        <h1>1. Luiz Carvalho</h1>
+        <h2>1.1 Bem Vindo a minha primeira aplicação web</h2>
+        <h3>1.1.1 Vamos começar?</h3>
+        <p>Olá, sou Luiz Carvalho, um estudante de programação.</p>
+        <p>Estou aprendendo a criar uma página web com HTML.<br /></p>
+        <p><strong>Vamos Começar a aprender HTML></strong> <br />
+            <b>Aprendendo.</b><br />
+            <em>Nesta aplicação estamos aprendendo um pouco de como funciona títulos de seções e subseções, paragrafos e muito mais!</em><br />
+            <u>Este é um exemplo de um texto sublinhado</u><br />
+            <s>Este é um exemplo de um texto Riscado</s><br />
+            X<sub>A</sub><sup>2</sup> + X = 10<br />
+        </p>
+
+        <pre>
+            public class Teste {
+                private int t1;
+                }
+        </pre>
+
+        <code>Teste c = new Teste();</code>
+
+        <!--Lista de ítens não ordenados. ul - unordered list-->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <!--Lista de ítens ordenados. ol - ordered list-->
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <!--Lista com sublistas.-->
+        <ul>
+            <li>
+                <ul>
+                    <li>SubItem 1</li>
+                    <li>SubItem 2</li>
+                </ul>
+            </li>
+            <li>Item 2</li>
+        </ul>
+
+        <!--Spans e divs são usados como contêineres de outros
+        conteúdos e fazem sentido quando pensamos em formatação
+        com CSS-->
+        <span>Esta é uma área de conteúdo</span>
+        <div>Esta é outra área de Texto</div>
+
+        <a href="http://www.oul.com.br"
+            title="Parei o mouse sobre o link"
+            target="_blank">Clique para abrir o UOL em outra janela/aba.</a>
+    
+        <a href="http://www.oul.com.br"
+            title="Parei o mouse sobre o link">Clique para abrir o UOL NA MESMA JANELA/ABA</a>
+        <br />
+
+        <img src="imagens/portrait_jesus_christ_heinrich_hofmann.jpeg"
+            alt="Uma Imagem de Jesus Cristo" />
+        <br />
+
+         <img src="imagens/JesusCristo2.jpg"
+            alt="Uma Imagem de Jesus Cristo Orando" />
+        <br />
+
+        <img src="imagens/Sao-Paulo-Brazil-Temple1.jpg"
+           alt="Uma Imagem do Templo de São Paulo"
+           usemap="#mapa" />
+
+        <map name="mapa">
+            <area target="_blank"
+                alt="Site churchofjesuschrist.org"
+                title="Vai para o site da igreja"
+                shape="rect"
+                coords="34, 175, 159, 266"
+                href="https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=por" />
+        </map>
+
+        <img src="https://lh5.googleusercontent.com/p/AF1QipM-BbJyzDIJOu85gD_lKK3EdGIlJvEVW6riodJm=w408-h544-k-no" alt="Imagem do Templo de são Paulo" usemap="#fun" /> 
+    
+        <map name="fun">                                                                               
+            <area shape="circle" alt="Site churchofjesuschrist.org" title="Vai para o site da igreja" coords="117, 248, 33" href="https://www.churchofjesuschrist.org/?lang=por" />
+            <area shape="rect" alt="Site churchofjesuschrist.org" title="Biblioteca o evangelho" coords="123, 19, 240, 45" href="https://www.churchofjesuschrist.org/study/scriptures?lang=por&platform=web" />
+            <area shape="rect" alt="Site churchofjesuschrist.org" title="Eventos e noticias" coords="151, 72, 212, 97" href="https://newsroom.churchofjesuschrist.org/events" />
+            <area shape="poly" alt="Site learn.microsoft.com" title="Lições da microsoft" coords="125, 289, 127, 345, 129, 405, 252, 404, 251, 452, 125, 453, 126, 543, 279, 540, 279, 287, 132, 287" href="https://docs.microsoft.com/pt-
+            br/learn/modules/build-simple-website" /> 
+        </map>
+    <br />
+
+za
+        <table class="exemploClasse">
+            <thead>
+                <tr>
+                     <th class="auto-style1">Minha Div</th>
+                     <th class="auto-style1">Minha Span</th>
+                </tr>                                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="divdiv">Esta é outra área de texto</div>
+                    </td>
+                    <td>
+                        <span id="divspan">Esta é uma área de conteúdo</span>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Meu Rodapé</th>
+                    <td>Minha Bagunça</td> 
+                </tr>
+            </tfoot>
+        </table>
+
+        <table id="exemploID">
+        <thead>
+            <tr>
+                <th>CPF</th>
+                <th>NOME</th>
+                <th>TELEFONE</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td rowspan="2">345.735.358-10</td>
+                    <td>Luiz Carvalho</td>
+                    <td>11-95721-9260</td>
+                </tr>
+                <tr>
+                    <!--<td>345.735.358-10</td>-->
+                    <td style="text-align: center!Important" colspan="2">Luiz Carvalho</td>
+                    <!--<td>11-95721-9260</td>-->
+                </tr>
+        </tbody>
+        </table>
+
+
+
+
+
+
+    </body>
+</html>

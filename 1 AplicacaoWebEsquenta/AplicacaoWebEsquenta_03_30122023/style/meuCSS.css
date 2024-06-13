@@ -1,0 +1,74 @@
+﻿
+table {
+    border: 5px solid red;
+}
+
+.exemploClasse {
+    border: 2px solid #000;
+    border-collapse:collapse;
+}
+
+.exemploClasse th, .exemploClasse td {
+    border: 2px solid #000;
+}
+
+#exemploID {
+    border: 5px solid green;
+    color: green;
+    border-collapse:collapse;
+}
+
+#exemploID th, #exemploID td
+{
+    border: 5px solid green;
+    border-collapse:collapse;
+}
+
+/** Seletor de formatação por marcação. */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;  
+}
+
+/*table {
+  border: 1px solid #000;
+}
+
+
+td {
+  border: 1px solid #000;	
+}*/
+
+/** Seletor de formatação por id. */
+#idiomas {
+  color: red;
+}
+
+/** Seletor de formatação por classe. */
+.idioma {
+  background-color: blue;
+  color: #fff;
+}
+
+.outra-classe {
+  font-weight: bold;
+}
+
+/** Seletor de formatação de filhos. */
+table tbody tr:nth-child(odd) {
+  background-color: rgb(230, 230, 230);
+}
+table tbody tr:nth-child(even) {
+  background-color: rgb(150, 150, 150);
+}
+
+/** Seletor de formatação por atributo. */
+td[rowspan] {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/** Seletores especiais. **/
+p::first-letter {
+  font-size: 30px;
+}

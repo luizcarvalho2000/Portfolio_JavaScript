@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CV LFTC</title>
+    <meta name="author" content="Luiz FT Cravalho" />
+    <meta name="description" content="CV de Luiz FT Carvalho" />
+    <meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!--<style>
+        table, table th, table td {
+            border: 5px solid #f00;
+            border-collapse: collapse;
+        }
+
+        .treco {
+            border: 2px solid #000;
+            border-collapse: collapse;
+        } 
+
+        #preferencias, #preferencias th, #preferencias td {
+            border: solid #000;
+            border-collapse: collapse;
+        } 
+    </style>-->
+
+    <script>
+        $(document).ready(function () {
+            $("#enderecoJQ").blur(function () {
+                var campoEnderecoJQ = $("#enderecoJQ");
+                if ($("#enderecoJQ").val().trim() == "") {
+                    campoEnderecoJQ.css("background-color", "lightcyan");
+                    $("#enderecoJQ").css("border", "3px solid red");
+                    $("#nome").val($("#identificacao").html().toString());
+                    $("#nome").css({ "background-color": "fff", "border": "", "display": "block", "width": 50 % !Important })
+                } else {
+                    $("#enderecoJQ").css("background-color", "lightgreen");
+                    campoEnderecoJQ.css("border", "3px solid blue");
+                    $("nome").val("Luiz Felipe Teixeira de Carvalho");
+                    $("nome").css({
+                        "background-color": "rgb(240,240,240)", "border": "2px solid #333", "display": "block", "widht": "100%"
+                    })
+                }
+            });
+
+            $("#alterarConteudoJQ").on("click", function () {
+                $("#nome").val("Luiz F.T Carvalho");
+                $("#identificacao").html($("#nome").val());
+            });
+        });
+
+        function validarNome() {
+            var campoNome = document.getElementById("nome");
+            if (campoNome.value.trim() == "") {
+                campoNome.style.border = "3px solid red";
+            } else {
+                campoNome.style.border = "";
+            }
+        }
+
+        function alterarNome() {
+            document.getElementById("nome").value = "Luiz F T C";
+            document.getElementById("identificacao").innerHTML = document.getElementById("nome").value;
+        }
+
+        function atualizarPosicao(e) {
+            //declara e armazena a div de zoom ou o (elemento) div de zoom
+            var divzoon = document.getElementById("zoom");
+            //Exibe o div de zoom - Exibe o (elemento) div zoom
+            divzoon.style.display = "block"
+            //Muda a posição do zip de zoom para o próximo da posiçao do mouse.
+            divzoon.style.top = (e.clientY + 12) + "px";
+            divzoon.style.left = (e.clientX + 12) + "px";
+            //Ajusta a posição da imagem dentro do div de zoom.
+            var deltaX = (e.clientX);
+            var deltaY = (e.clientY);
+            deltaX *= -1;
+            deltaY *= -1;
+            deltaX += 198; //Começando pelo tamanho 128 é igual do conteiner de zoom depois vem ajustando 224 178
+            deltaY += 175;
+
+            //Aplicando posicionamento final aplicando deslocamento horizotal deltaX e deslocamento vertical deltaY
+            document.getElementById("imagemZoom").style.backgroundPosition =
+                deltaX + "px " + deltaY + "px";
+        }
+    </script>
+    <style>
+        .zoom{
+            display:none;
+            position:absolute;
+            width: 128px;
+            height: 128px;
+
+            /*Esconde o conteudo da div que ficar para fora dela - Esconde o conteudo do (elemento ) div que ficar para fora dele*/
+            overflow:hidden;
+
+            /*Deixa a div redonda*/
+            border-radius: 50%;
+            border: 3px inset #fff;
+        }
+
+        #imagemZoom {
+            /*aumenta o tamanho da imagem em 3x*/
+            -webkit-transform: scale(3);
+            -moz-transform: scale(3);
+            -ms-transform: scale(3);
+            -o-transform: scale(3);
+            transform: scale(3);
+            width: 100%;
+            height: 100%;
+
+            /*coloca a imagem como fundo da div*/
+            background-color: #000;
+            background-image: url(imgs/2023-11-18.jpg);
+            background-repeat: no-repeat;
+            -moz-background-size: 192px 192px;
+            -o-background-size: 192px 192px;
+            -webkit-background-size: 192px 192px;
+            background-size: 192px 192px;
+        }
+
+        .img{
+            width: 192px;
+            height: 192px;
+        } 
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="style/posicionamento.css" />
+</head>
+    <body>
+         <h1><u>Curriculo Vitae</u></h1>
+        <div id="elementoFlutuante">
+            &nbsp;</div>
+
+        <div id="conteiner"> 
+            <div id="foto">
+                <p><img src="imgs/2023-11-18.jpg" alt="Minha Foto de CV" class="img" onmousemove="atualizarPosicao(event)"/></p>          
+                    <div id="zoom" class="zoom">
+                        <div id="imagemZoom">          
+                        </div>
+                    </div>
+                <div id="identifica">
+                    <h2 id="identificacao">Luiz FT Carvalho</h2>
+                </div>                     
+            </div>
+            <div id="endereco">
+                <p>Rua José Pereira, 51.</p>
+                <p>Jundiapeba - Mogi das Cruzes-SP.</p>
+                <p>Telefone: 11-957219260.</p>
+            </div>
+            <!--<img src="http://via.placeholder.com/220x200" alt="Imagem com texto 200x200." /></div>-->    
+
+        <div class="clear"></div>
+
+        <div id="conteudo">
+            <h2>1.Objetivo</h2>
+                <p>Analista Programador Full Stack Dev.</p>
+
+            <h2>2.Formação Acadêmica</h2>
+            <ul>
+                <li>2022:Analise e Desenvolvimento de Sistemas(<a href="https://diplomas.somosb4.com.br/validar/298.298.8bd76a180c6b" target="_blank">UNOPAR</a>)</li>
+                <li>2023:Engenharia de Software(<a href="https://kroton.platosedu.io/docs/validar/29829803fb57b355a8c1d1561bd2209dde90482a7eb82ab7aec409255b0335899112dd" target="_blank">Anhaguera</a>)</li>
+                <li>2023:Sistema da informação(<a href="https://kroton.platosedu.io/docs/validar/298298cccb33d73c78547d85e2ff02c42469979ef2575dd14608adbb28a4afffa000bf" target="_blank">Anhanguera</a>)</li>
+            </ul>
+
+            <h2>3. Experiencia Profissional</h2>
+            <ul>
+                <li>LCS Engenharia e Projetos(2023-ATUAL): Armador de Ferragens III</li>
+                <li>IBAR Refratarios(2021-2023): Armador de Ferragens III</li>
+                <li>NGN Engenharia EIRELLI(2014-2020):Lider de Ferragens</li>
+            </ul>
+
+            <h2>4.Disciplinas já Concluidas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Disciplina</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">2020</td>
+                        <td>ADS</td>
+                        <td>POO</td>
+                    </tr>
+                    <tr>
+                        <!--<td>2020</td>-->
+                        <td>ADS</td>
+                        <td>SGBD</td> 
+                    </tr>
+                    <tr>
+                        <td colspan="3">Qualquer Texto</td>
+                        <!--<td>Qualquer texto</td>-->
+                        <!--<td>Qualquer texto</td>-->
+                    </tr>
+                    <tr>
+                        <td rowspan="3">2021</td>
+                        <td>ADS</td>
+                        <td>RSD</td>
+                    </tr>                 
+                    <tr>
+                        <!--<td rowspan="3">2021</td>-->
+                        <td>ADS</td>
+                        <td>DMO</td>
+                    </tr>
+                    <tr>
+                        <!--<td rowspan="3">2021</td>-->
+                        <td>ADS</td>
+                        <td>CON</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="treco">
+                <thead>
+                    <tr>
+                        <th class="treco">ANO</th>
+                        <th class="treco">DISCIPLINA</th>
+                        <th class="treco">CURSO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="treco">2022</td>
+                        <td class="treco">MVC</td>
+                        <td class="treco">ADVPL</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <table id="preferencias">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>DESCRICAO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>PAI CELESTIAL</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>JESUS CRISTO</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>FAMILIA</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>PROGRAMAÇÃO</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="idioma">IDIOMAS</h2>
+               <p class="idioma outra-classe">Português Fluente. Inglês Intermediario.</p>
+
+                    <h2>6. Entrer em Contato</h2>
+                    <form action="ImportacaoCEP.html" method="get">
+                <p>Deixe o campo "Nome" vazio e tire o foco dele (pressione TAB ou clique fora do campo).Agora, preencha o campo e faça o mesmo.</p>
+                        <label for="nome" class="rotulo"
+                            accesskey="u">Se<u>u</u>nome:</label>
+                        <input type="text" name="nome" id="nome"
+                            value="Nome atual"
+                            placeholder="Informar o seu nome completo." onblur="validarNome()" />
+                        <br />
+                        <label for="enderecoJQ" class="rotulo"
+                            accesskey="u">Se<u>u</u>Endereço:</label>
+                        <input type="text" name="enderecoJQ" id="enderecoJQ"
+                            value="Endereço atual"
+                            placeholder="Informe o seu Endereço Para Cadastro." />
+                        <br /> 
+                 <label for="assunto" class="rotulo">Assunto:</label>
+                        <select name="assunto" id="assunto">
+                            <option value="-1">Selecione uma das opções...</option>
+                            <option value="0">Dúvida</option>
+                            <option value="1" selected="selected">Sugestões</option>
+                            <!--selected é usado para definir qual
+                            opção está selecionada inicialmente.-->
+                        </select>
+                        <label class="rotulo">Gênero:</label>
+                        <input type="radio" name="genero" id="masculino" /><label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="feminino" checked="checked" /><label for="feminino">feminino</label>
+                        <input type="radio" name="genero" id="outro" /><label for="outro">Outro</label>
+                        <br />
+                        <input type="checkbox" name="quero_cadastrar" id="cadastrar" checked="checked" />
+                        <label for="cadastrar">Quero me cadastrar na newletter</label>
+                        <br />
+                        <label for="mensagem" class="rotulo">Sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem">Conteúdo atual</textarea>
+                        <br />
+
+                <input type="button" name="alterarConteudo" id="alterarConteudo" value="Alterar Nome" onclick="alterarNome"() />
+                        <br />
+                <input type="button" name="alterarConteudoJQ" id="alterarConteudoJQ" value="Alterar Nome (JQuery)" />
+                        <br />
+                        <input type="submit" name="enviar" value="Enviar" />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                   </form>
+        </div>     
+    </body>
+</html>

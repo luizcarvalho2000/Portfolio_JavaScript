@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Curso programar\\JavaScript\\AplicacaoWebMaratona_01_25052024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9202B434-416B-4A71-9A6F-95E3994D6238}|AplicacaoWebMaratona_01_25052024\\AplicacaoWebMaratona_01_25052024.csproj|c:\\curso programar\\javascript\\aplicacaowebmaratona_01_25052024\\aplicacaowebmaratona_01_25052024\\maratona.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9202B434-416B-4A71-9A6F-95E3994D6238}|AplicacaoWebMaratona_01_25052024\\AplicacaoWebMaratona_01_25052024.csproj|solutionrelative:aplicacaowebmaratona_01_25052024\\maratona.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Maratona.html",
+              "DocumentMoniker": "C:\\Curso programar\\JavaScript\\AplicacaoWebMaratona_01_25052024\\AplicacaoWebMaratona_01_25052024\\Maratona.html",
+              "RelativeDocumentMoniker": "AplicacaoWebMaratona_01_25052024\\Maratona.html",
+              "ToolTip": "C:\\Curso programar\\JavaScript\\AplicacaoWebMaratona_01_25052024\\AplicacaoWebMaratona_01_25052024\\Maratona.html",
+              "RelativeToolTip": "AplicacaoWebMaratona_01_25052024\\Maratona.html",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAswFAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-25T12:33:09.217Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

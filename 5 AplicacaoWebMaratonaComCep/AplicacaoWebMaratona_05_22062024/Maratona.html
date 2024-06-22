@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DESIGN PROFISSIONAL - MARATONA</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luiz Caravalho" />
+    <meta name="description" content="Pagina de apresentação - Maratona de programação - diagramação profissional CSS- de HTML" />
+    <meta name="keywords" content="Palavras-Chaves para pesquisa no mecanismo de busca do google e outros- windows1252 = ISO-8899-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/estilo_profissional/estilo_profissional.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        label{ 
+            display:block;
+        }
+        
+        #carregando {            
+            display:none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#dataHora").css("background-color", "cyan");
+            $(".itemMenu").css("background-color", "lightcyan");
+            $("#dataHora").html(new Date().toString());
+            $("#imagem").attr("src", "http://via.placeholder.com/300x50");
+            $("#imagem").attr("alt", "Uma imagem com texto 300x50");
+
+            function atualizarRelogio() {
+                const options = {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                    hour: 'numeric', minute: 'numeric', second: 'numeric',
+                    hour12: false
+                };
+                const now = new Date();
+                const formattedDate = now.toLocaleString('pt-BR', options);
+                $("#dataHora").html(formattedDate);
+            }
+            setInterval(atualizarRelogio, 1000);
+            atualizarRelogio();
+
+
+            $("#imagem").click(function () {
+                $.get("ASP_get.asp", function (data, status) {
+                    alert("Dados:" + data + "\n" + "Status" + status);
+                });
+            });
+            $("#fotoDestaque").click(function () {
+                $.post("ASP_post.asp",
+                    {
+                        Nome: "Luiz Felipe T Carvalho",
+                        Cidade: "Mogi das Cruzes"
+                    },
+                    function (data, status) {
+                        alert("Dados:" + data + "\n" + "Status:" + status);
+                    });
+            });
+        });
+
+        function consultarDadosPeloCEP() {
+            var conteudoCEP = document.getElementById("cep").value;
+            var url = "https://viacep.com.br/ws/" + conteudoCEP + "/json/";
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        var objetoResposta = JSON.parse(this.responseText);
+                        if (!objetoResposta.erro) {
+                            document.getElementById("uf").value = objetoResposta.uf;
+                            document.getElementById("cidade").value = objetoResposta.localidade;
+                            document.getElementById("bairro").value = objetoResposta.bairro;
+                            document.getElementById("logradouro").value = objetoResposta.logradouro;
+                        } else {
+                            alert("CEP não encontrado.");
+                        }
+                    } else {
+                        alert("Erro ao consultar o CEP.");
+                    }
+
+                    document.getElementById("carregando").style.display = "none";
+                }
+            };
+
+            xhttp.open("GET", url, true);
+            xhttp.send();
+            document.getElementById("carregando").style.display = "inline-table";
+        }
+
+    </script>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="logo">
+            <img id="imagem" />
+        </div>
+        <div id="dataHora">
+
+        </div>
+        <div class="clearfix"></div>
+        <div id="menu">
+            <span class="itemMenu">
+                <a class="btn btn-info" href="Maratona.html">Principal</a>
+            </span><span class="itemMenu">
+                <a class="btn btn-info" href="http://www.oul.com.br/esporte" target="_blank">ESPORTES</a>
+            </span><span class="itemMenu">
+                <a class="btn btn-info" href="http://www.fatecmogidascruzes.com.br" target="_blank">FATEC</a>
+            </span>
+        </div>
+
+        <div class="clearfix"></div>
+        <div id="destaque" class="col-lg-2, col-md-6, col-xs-12" style="background-color: red">
+            <img id="fotoDestaque" src="http://via.placeholder.com/400x300"
+                 alt="Imagem com texto 40x300" />
+            <h1 class="aluno">Aluno é aprovado</h1>
+            <p id="campeao">O aluno Luiz Carvalho foi aprovado na disciplina...</p>
+        </div>
+        <div id="noticias" class="col-lg-10, col-md-6, col-xs-12" style="background-color: lightblue">
+            <div class="noticias">
+                <h1 class="evento">Campeão da maratona</h1>
+                <p id="cepDoCAmpeao">08750740</p>
+            </div>
+            <div class="noticias">
+                <h1 class="evento">Maratona de programação</h1>
+                <p id="cepDoVice">08750260</p>
+            </div>
+        </div>
+
+        <div id="propagandas">
+            <div class="propaganda">
+                <img src="http://via.placeholder.com/200x180"
+                     alt="Imagem com texto 200x180" />
+            </div>
+            <div class="propaganda">
+                <img src="http://via.placeholder.com/200x180"
+                     alt="Imagem com texto 200x180" />
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div id="ultimasNoticias"><h1>Ultimas noticias</h1></div>
+        <div id="galeria">
+            <img src="http://via.placeholder.com/1600x300"
+                 alt="Imagem com texto 1600x300" />
+            <input type="button" value="<" />
+            <input type="button" value=">" />
+        </div>
+    </div>
+<form>
+    <div id="formContainer">
+        <div class="clearfix" id="importarCep">            
+            <div>
+                <p>Informar o CEP e clique sobre o botão 'Pesquisar' para que os 
+                outros dados automaticamente sejam preenchidos.</p>
+            </div>
+            <div>
+                <label for="logradouro">Endereço:</label>
+                <input type="text" name="logradouro" id="logradouro" />
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" />
+            </div>
+            <div>
+                <label for="numero">Número:</label>
+                <input type="text" name="numero" id="numero" />
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" id="complemento" />
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" />
+                <label for="uf">Estados:</label>
+                <input type="text" name="uf" id="uf" />
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" />
+                <input type="button" value="Pesquisar" onclick="consultarDadosPeloCEP()" />
+                <div id="carregando">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" alt="Carregando..." />
+                </div>
+                <div>
+                <input type="reset" value="Limpar" />
+                </div>  
+            </div>
+            </div>
+
+        </div>    
+</form>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿/*Códigos de CSS para o "Maratona de Programação - Diagramação Profissional CSS.html" - 
+arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.css"*/
+ 
+ #conteiner {
+	margin: 0 auto 0 auto;
+	width: 90%;
+  }
+  #logo {
+	float: left;
+  }
+  #dataHora {
+	float: right;
+  }
+  .clearfix {
+	clear: both;
+  }
+#menu {
+    background-color: black;
+    color: white;
+    height: 2em;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden; 
+    padding: 0; 
+    margin: 0 auto; 
+}
+
+.itemMenu {
+    display: inline-block; 
+    line-height: 2em;
+    text-align: center;
+    width: calc(100% / 3); 
+    margin: 0; 
+    padding: 0;
+}
+
+    .itemMenu a {
+        color: white;
+        text-decoration: none;
+        display: block; 
+        padding: 0 10px; 
+    }
+
+  #destaque {
+	float: left;
+	margin-right: 2em;
+	min-width: 400px;
+	text-align: center;
+	width: 400px;
+  }
+  #noticias {
+	float: left;
+	width: 300px;
+  }
+  .noticia {
+	height: 180px;
+	width: 100%;
+  }
+  #propagandas {
+	float: right;
+	margin-left: 2em;
+	width: 200px;
+  }
+  .propaganda {
+	width: 100%;
+  }
+  #ultimasNoticias {
+	background-color: black;
+	color: white;
+	height: 2em;
+  }
+  #galeria {
+	text-align: center;
+  }
+  #galeria img {
+	width: 100%;   
+}
+
+
+#importarCep {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    clear: both;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#importarCep div {
+    margin-bottom: 15px;
+}
+
+
+#importarCep label {
+    display: inline-block;
+    width: 150px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+#importarCep input[type="text"] {
+    width: calc(50% - 170px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+.inline-field {
+    display: inline-block;
+    width: calc(50% - 170px);
+    box-sizing: border-box;
+}
+
+.inline-field + .inline-field {
+    margin-left: 20px;
+}
+
+#importarCep input[type="button"],
+#importarCep input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#carregando {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#carregando img {
+    width: 50px;
+    height: 50px;
+}
+
+#formContainer {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+
+

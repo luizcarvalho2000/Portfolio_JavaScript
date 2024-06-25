@@ -1,28 +1,35 @@
 ﻿/*Códigos de CSS para o "Maratona de Programação - Diagramação Profissional CSS.html" - 
 arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.css"*/
- 
- #conteiner {
-	margin: 0 auto 0 auto;
-	width: 90%;
-  }
-  #logo {
+
+#conteiner {
+    background-color: #fff;
+    margin: 0 auto 0 auto;
+    border-radius: 8px;
+    width: 90%;
+}
+
+ #logo {
 	float: left;
   }
-  #dataHora {
-	float: right;
-  }
+
+#dataHora {
+    float: right;
+    border-radius: 6px;
+}
   .clearfix {
 	clear: both;
   }
+
 #menu {
     background-color: black;
     color: white;
+    border-radius: 2px;
     height: 2em;
     text-align: center;
-    white-space: nowrap; 
-    overflow: hidden; 
-    padding: 0; 
-    margin: 0 auto; 
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .itemMenu {
@@ -34,51 +41,68 @@ arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.
     padding: 0;
 }
 
-    .itemMenu a {
-        color: white;
-        text-decoration: none;
-        display: block; 
-        padding: 0 10px; 
-    }
+.itemMenu a {
+    color: white;
+    text-decoration: none;
+    display: block; 
+    padding: 0 10px; 
+}
 
-  #destaque {
-	float: left;
-	margin-right: 2em;
-	min-width: 400px;
-	text-align: center;
-	width: 400px;
-  }
-  #noticias {
-	float: left;
-	width: 300px;
-  }
-  .noticia {
-	height: 180px;
-	width: 100%;
-  }
-  #propagandas {
-	float: right;
-	margin-left: 2em;
-	width: 200px;
-  }
-  .propaganda {
-	width: 100%;
-  }
-  #ultimasNoticias {
-	background-color: black;
-	color: white;
-	height: 2em;
-  }
-  #galeria {
-	text-align: center;
-  }
+#destaque {
+    float: left;
+    margin-right: 2em;
+    min-width: 400px;
+    text-align: center;
+    width: 400px;
+}
+
+#noticias {
+    float: left;
+    width: 300px;
+}
+
+.noticia {
+    height: 180px;
+    width: 100%;
+}
+
+#propagandas {
+    float: right;
+    margin-left: 2em;
+    width: 200px;
+}
+
+.propaganda {
+    width: 100%;
+}
+
+#ultimasNoticias {
+    background-color: black;
+    border-radius: 6px;
+    color: white;
+    height: 3em;
+
+}
+
+#galeria {
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 2px;
+}
+
   #galeria img {
 	width: 100%;   
 }
 
+#formContainer {
+    background-color: #fff;
+    margin: 0 auto 0 auto;
+    border-radius: 8px;    
+    width: 100%;}
+
 
 #importarCep {
-    background-color: #f9f9f9;
+    background-color: #5DE2E7;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -89,11 +113,9 @@ arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.
     margin-right: auto;
 }
 
-
 #importarCep div {
     margin-bottom: 15px;
 }
-
 
 #importarCep label {
     display: inline-block;
@@ -105,7 +127,6 @@ arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.
     padding-right: 10px;
 }
 
-
 #importarCep input[type="text"] {
     width: calc(50% - 170px);
     padding: 10px;
@@ -114,7 +135,6 @@ arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.
     box-sizing: border-box;
     display: inline-block;
 }
-
 
 .inline-field {
     display: inline-block;
@@ -152,14 +172,6 @@ arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.
     height: 50px;
 }
 
-#formContainer {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
 
 
 

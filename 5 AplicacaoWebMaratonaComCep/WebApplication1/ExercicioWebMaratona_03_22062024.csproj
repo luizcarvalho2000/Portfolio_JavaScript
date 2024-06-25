@@ -7,18 +7,20 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AE774EBA-D717-4635-9F70-D27F3048F9C4}</ProjectGuid>
+    <ProjectGuid>{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AplicacaoWebMaratona_05_22062024</RootNamespace>
-    <AssemblyName>AplicacaoWebMaratona_05_22062024</AssemblyName>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,6 +61,7 @@
   <ItemGroup>
     <Content Include="Maratona.html" />
     <Content Include="style\estilo_profissional\estilo_profissional.css" />
+    <Content Include="style\estilo_profissional\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +90,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51922/</IISUrl>
+          <IISUrl>http://localhost:50243/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

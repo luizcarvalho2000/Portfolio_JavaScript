@@ -3,3 +3,10 @@ C:\Curso programar\PotifolioC#\WebApplication1\WebApplication1\bin\WebApplicatio
 C:\Curso programar\PotifolioC#\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Curso programar\PotifolioC#\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Curso programar\PotifolioC#\WebApplication1\WebApplication1\obj\Debug\ExercicioWebMaratona_03_22062024.csprojResolveAssemblyReference.cache
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\bin\WebApplication1.dll.config
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\bin\WebApplication1.dll
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\bin\WebApplication1.pdb
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\obj\Debug\ExercicioWebMaratona_03_22062024.csproj.AssemblyReference.cache
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\obj\Debug\ExercicioWebMaratona_03_22062024.csproj.CoreCompileInputs.cache
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Curso programar\PortifolioJavaScript\5 AplicacaoWebMaratonaComCep\WebApplication1\obj\Debug\WebApplication1.pdb

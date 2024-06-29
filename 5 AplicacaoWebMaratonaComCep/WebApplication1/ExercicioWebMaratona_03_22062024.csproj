@@ -59,9 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cep.html" />
     <Content Include="Maratona.html" />
     <Content Include="style\estilo_profissional\estilo_profissional.css" />
-    <Content Include="style\estilo_profissional\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

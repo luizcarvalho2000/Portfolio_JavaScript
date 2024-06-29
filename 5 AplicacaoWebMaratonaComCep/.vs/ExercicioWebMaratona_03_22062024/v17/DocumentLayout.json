@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\",
+  "WorkspaceRootPath": "C:\\Curso programar\\PortifolioJavaScript\\5 AplicacaoWebMaratonaComCep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|c:\\curso programar\\potifolioc#\\webapplication1\\webapplication1\\maratona.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|c:\\curso programar\\portifoliojavascript\\5 aplicacaowebmaratonacomcep\\webapplication1\\maratona.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|solutionrelative:webapplication1\\maratona.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|C:\\Curso programar\\PotifolioC#\\WebApplication1\\webapplication1\\style\\estilo_profissional\\estilo_profissional.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|C:\\Curso programar\\PortifolioJavaScript\\5 AplicacaoWebMaratonaComCep\\webapplication1\\style\\estilo_profissional\\estilo_profissional.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|solutionrelative:webapplication1\\style\\estilo_profissional\\estilo_profissional.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|C:\\Curso programar\\PotifolioC#\\WebApplication1\\webapplication1\\style\\estilo_profissional\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{54D51A1B-2B88-47EF-B3FF-6879AAD90E43}|WebApplication1\\ExercicioWebMaratona_03_22062024.csproj|solutionrelative:webapplication1\\style\\estilo_profissional\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "estilo_profissional.css",
-              "DocumentMoniker": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\WebApplication1\\style\\estilo_profissional\\estilo_profissional.css",
+              "DocumentMoniker": "C:\\Curso programar\\PortifolioJavaScript\\5 AplicacaoWebMaratonaComCep\\WebApplication1\\style\\estilo_profissional\\estilo_profissional.css",
               "RelativeDocumentMoniker": "WebApplication1\\style\\estilo_profissional\\estilo_profissional.css",
-              "ToolTip": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\WebApplication1\\style\\estilo_profissional\\estilo_profissional.css",
+              "ToolTip": "C:\\Curso programar\\PortifolioJavaScript\\5 AplicacaoWebMaratonaComCep\\WebApplication1\\style\\estilo_profissional\\estilo_profissional.css",
               "RelativeToolTip": "WebApplication1\\style\\estilo_profissional\\estilo_profissional.css",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAIgAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-22T14:17:22.816Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JavaScript.js",
-              "DocumentMoniker": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\WebApplication1\\style\\estilo_profissional\\JavaScript.js",
-              "RelativeDocumentMoniker": "WebApplication1\\style\\estilo_profissional\\JavaScript.js",
-              "ToolTip": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\WebApplication1\\style\\estilo_profissional\\JavaScript.js",
-              "RelativeToolTip": "WebApplication1\\style\\estilo_profissional\\JavaScript.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-25T13:08:47.993Z"
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Maratona.html",
-              "DocumentMoniker": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\WebApplication1\\Maratona.html",
+              "DocumentMoniker": "C:\\Curso programar\\PortifolioJavaScript\\5 AplicacaoWebMaratonaComCep\\WebApplication1\\Maratona.html",
               "RelativeDocumentMoniker": "WebApplication1\\Maratona.html",
-              "ToolTip": "C:\\Curso programar\\PotifolioC#\\WebApplication1\\WebApplication1\\Maratona.html",
+              "ToolTip": "C:\\Curso programar\\PortifolioJavaScript\\5 AplicacaoWebMaratonaComCep\\WebApplication1\\Maratona.html",
               "RelativeToolTip": "WebApplication1\\Maratona.html",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAMIAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-06-22T14:17:14.178Z",
               "EditorCaption": ""

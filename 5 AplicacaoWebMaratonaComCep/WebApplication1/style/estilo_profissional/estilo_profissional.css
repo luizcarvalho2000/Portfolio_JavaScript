@@ -90,19 +90,20 @@ arquivo: "estilo_profissional.css" - pasta: "style/avancado/estilo_profissional.
     border-radius: 2px;
 }
 
-  #galeria img {
+ #galeria img {
 	width: 100%;   
 }
 
-#formContainer {
+#formContainer { 
     background-color: #fff;
     margin: 0 auto 0 auto;
     border-radius: 8px;    
-    width: 100%;}
+    width: 100%;
 
+}
 
-#importarCep {
-    background-color: #5DE2E7;
+#importarCep {    
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

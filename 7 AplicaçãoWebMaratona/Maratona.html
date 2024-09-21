@@ -1,0 +1,157 @@
+﻿<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>DESIGN PROFISSIONAL - MARATONA</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luiz Caravalho" />
+    <meta
+      name="description"
+      content="Pagina de apresentação - Maratona de programação - diagramação profissional CSS- de HTML"
+    />
+    <meta
+      name="keywords"
+      content="Palavras-Chaves para pesquisa no mecanismo de busca do google e outros- windows1252 = ISO-8899-1"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/estilo_profissional/estilo_profissional.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#dataHora").css("background-color", "cyan");
+        $(".itemMenu").css("background-color", "lightcyan");
+        $("#dataHora").html(new Date().toString());
+        $("#imagem").attr("src", "http://via.placeholder.com/300x50");
+        $("#imagem").attr("alt", "Uma imagem com texto 300x50");
+
+        function atualizarRelogio() {
+          const options = {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "numeric",
+            second: "numeric",
+            hour12: false,
+          };
+          const now = new Date();
+          const formattedDate = now.toLocaleString("pt-BR", options);
+          $("#dataHora").html(formattedDate);
+        }
+        setInterval(atualizarRelogio, 1000);
+        atualizarRelogio();
+
+        $("#imagem").click(function () {
+          $.get("ASP_get.asp", function (data, status) {
+            alert("Dados:" + data + "\n" + "Status" + status);
+          });
+        });
+        $("#fotoDestaque").click(function () {
+          $.post(
+            "ASP_post.asp",
+            {
+              Nome: "Luiz Felipe T Carvalho",
+              Cidade: "Mogi das Cruzes",
+            },
+            function (data, status) {
+              alert("Dados:" + data + "\n" + "Status:" + status);
+            },
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="conteiner">
+      <div id="logo">
+        <img id="imagem" />
+        <a href="Login.html" class="btn btn-primary">Login</a>
+        <a href="Cadastro.html" class="btn btn-primary">Cadastro</a>
+      </div>
+      <div id="dataHora"></div>
+      <div class="clearfix"></div>
+      <div id="menu">
+        <span class="itemMenu">
+          <a class="btn btn-info" href="Maratona.html">Principal</a> </span
+        ><span class="itemMenu">
+          <a
+            class="btn btn-info"
+            href="http://www.oul.com.br/esporte"
+            target="_blank"
+            >ESPORTES</a
+          > </span
+        ><span class="itemMenu">
+          <a
+            class="btn btn-info"
+            href="http://www.fatecmogidascruzes.com.br"
+            target="_blank"
+            >FATEC</a
+          >
+        </span>
+      </div>
+
+      <div class="clearfix"></div>
+      <div
+        id="destaque"
+        class="col-lg-2, col-md-6, col-xs-12"
+        style="background-color: red"
+      >
+        <img
+          id="fotoDestaque"
+          src="http://via.placeholder.com/400x300"
+          alt="Imagem com texto 400x300"
+        />
+        <h1 class="aluno">Aluno é aprovado</h1>
+        <p id="campeao">O aluno Luiz Carvalho foi aprovado na disciplina...</p>
+      </div>
+      <div
+        id="noticias"
+        class="col-lg-10, col-md-6, col-xs-12"
+        style="background-color: lightblue"
+      >
+        <div class="noticias">
+          <h1 class="evento">Campeão da maratona</h1>
+          <p id="cepDoCAmpeao">08750740</p>
+        </div>
+        <div class="noticias">
+          <h1 class="evento">Maratona de programação</h1>
+          <p id="cepDoVice">08750260</p>
+        </div>
+      </div>
+
+      <div id="propagandas">
+        <div class="propaganda">
+          <img
+            src="http://via.placeholder.com/200x180"
+            alt="Imagem com texto 200x180"
+          />
+        </div>
+        <div class="propaganda">
+          <img
+            src="http://via.placeholder.com/200x180"
+            alt="Imagem com texto 200x180"
+          />
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="ultimasNoticias"><h1>Ultimas noticias</h1></div>
+      <div id="galeria">
+        <img
+          src="http://via.placeholder.com/1600x300"
+          alt="Imagem com texto 1600x300"
+        />
+        <input type="button" value="<" />
+        <input type="button" value=">" />
+      </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

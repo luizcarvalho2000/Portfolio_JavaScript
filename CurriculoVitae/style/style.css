@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info {
+    text-align: right; 
+    margin-right: 20px; 
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.contact-info img {
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+h1, h2 {
+    color: #00008b;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+h3 {
+    color: #333;
+    font-weight: 400;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section p {
+    padding-left: 30px;
+}
+
+
+.section-title {
+    background-color: #7a93ac; 
+    color: white;
+    font-weight: bold; 
+    font-size: 18px;
+    text-transform: uppercase; 
+    padding: 10px;
+    font-weight: 800;
+    padding-left: 30px;
+}
+
+/* Media Query para telas menores, como celulares */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Ocupa toda a largura da tela */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Diminui o tamanho da fonte nos celulares */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 16px; /* Ajusta tamanho da fonte do título da seção */
+    }
+
+    .contact-info img {
+        width: 15px; /* Diminui os ícones de contato */
+    }
+}
+
+/* Media Query para telas muito pequenas, como smartphones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, li {
+        font-size: 14px; /* Diminui o texto geral */
+    }
+
+    .contact-info p {
+        text-align: left; /* Alinha o texto à esquerda em telas menores */
+    }
+
+    .contact-info img {
+        width: 12px; /* Ajusta ainda mais o tamanho dos ícones */
+    }
+}
